@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Hexashop-Resposive in Mobile View</title>
+    <style>
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Responsive  for mobile view */
+        @media (max-width: 785px) {
+
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        z-index: 100;
+        }
+
+        .logo1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo1 img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo1 h1, .logo p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .logo1 p {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .menu-icon span {
+            display: block;
+            height: 4px;
+            background-color: #000;
+        }
+
+
+
+        nav {
+            display: block;
+        }
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+        }
+
+        /* Hide the checkbox */
+        #menu-toggle {
+            display: none;
+        }
+            
+        .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 20px;
+        }
+
+        .image-item {
+        position: relative;
+        overflow: hidden;
+        }
+
+        /* Responsive image */
+        .image-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        }
+                .image-item1 {
+                    position: relative;
+                    width: calc(33.333% - 20px); 
+                    overflow: hidden;
+                }
+
+                .image-item1 img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+
+
+            header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 70px;
+            margin-right: 10px;
+        }
+
+
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 200;
+        }
+
+        .menu-icon span {
+            display: block;
+            height: 4px;
+            background-color: #000;
+        }
+
+        nav {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 70px;
+            z-index: 300; 
+        }
+
+        nav ul {
+            display: none;
+            list-style: none;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li {
+            padding: 10px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+        }
+
+
+
+        /* Hide the checkbox */
+        #menu-toggle {
+            display: none;
+        }
+
+        nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background-color: white;
+                right: 20px;
+                top: 10px;
+                width: 200px;
+                z-index: 300;
+            }
+
+        
+            .menu-icon {
+                display: flex;
+            }
+
+        
+            #menu-toggle:checked + .menu-icon + nav ul {
+                display: flex;
+            }
+
+
+
+            .image-item {
+                        width: 100%;
+                    }
+
+                    .text-overlay h1 {
+                        font-size: 1.2rem; 
+                    }
+
+                    .text-overlay p {
+                        font-size: 0.9rem; 
+                    }
+
+                    .image-item1 {
+                        width: 100%; 
+                    }
+
+                    h1 {
+                        font-size: 2rem;
+                    
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    .text {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                    }
+
+                    .stars {
+                        font-size: 1rem;
+                        padding-right: 15px; 
+                    }
+                    .price{
+                        padding: 15px;
+                    }
+
+                    .text1 {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                    }
+
+                    .text2 {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                    }
+
+                    .quote {
+                        font-size: 1.1rem;
+                    }
+
+                    .btn1 {
+                        width: 200px; 
+                        /*padding: 15px 0;*/
+                        font-size: 20px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        
+                    }
+
+
+                    .container5 {
+                        position: relative;
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+
+
+                    .imageexp1{
+                        position: relative;
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+
+                    .imageexp2{
+                        position: relative;
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+
+                    .content1{
+                        position: relative;
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+
+                    .Types1{
+                        min-height: 255px;
+                        background-color: #f8f8f8;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    .h4{
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #2a2a2a;
+                        padding-top: 90px;
+                        margin-bottom: 5px;
+                    }
+                    .span{
+                        font-size: 14px;
+                        font-style: italic;
+                        color:#aaa;
+                        font-weight: 500;
+                    }
+                
+
+                    .text-overlay {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    text-align: center;
+                    padding: 10px;
+                    width: 90%; 
+                }
+
+            
+                .text-overlay h1 {
+                    font-size: 1.8rem;
+                    margin-bottom: 10px;
+                }
+
+            
+                .text-overlay p {
+                    font-size: 1.1rem;
+                }
+
+                .a3{
+                    border:1px solid black
+                }
+
+                .container1 {
+                    max-width: 800px;
+                    margin: 0 auto;
+                
+                }
+
+                .container2 {
+                    max-width: 800px;
+                    margin: 0 auto;
+                
+                }
+
+                .container3 {
+                    max-width: 800px;
+                    margin: 0 auto;
+                
+                }
+
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 10px;
+                    padding-left: 15px;
+                }
+
+            
+                p {
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+
+                .image {
+                    width: 100%;
+                    height: auto;
+                    padding:15px;
+                }
+
+            
+                .bottom-section {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .text {
+                    font-size: 1.5rem;
+                }
+
+                .stars {
+                    color: black; 
+                }
+                
+                .price{
+                        padding: 15px;
+                    }
+
+                    .text1 {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                    }
+
+                    .text2 {
+                        font-size: 1.2rem;
+                        padding: 15px;
+                    }
+
+                    .container4 {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    background-color: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+
+            
+
+                .container5{
+                    position: relative;
+                    width:100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                .Type{
+                    min-height:255px;
+                    background-color: #f8f8f8;
+                    text-align: center;
+                    width:100%;
+                }
+
+
+                
+                h1 {
+                    font-size: 2.5rem;
+                    color: #333;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    padding-top: 90px;
+                    margin-bottom: 5px;
+                }
+
+            
+                p {
+                    font-size: 1.1rem;
+                    line-height: 1.8;
+                    color: #666;
+                    margin-bottom: 20px;
+                }
+
+            
+                .quote {
+                    font-style: italic;
+                    color: #333;
+                    font-size: 1.2rem;
+                    border-left: 5px solid #333;
+                    padding-left: 15px;
+                    margin: 20px 0;
+                    position: relative;
+                }
+
+            
+               
+
+            
+                .support {
+                    color: #0066cc;
+                    text-decoration: none;
+                }
+
+                .support:hover {
+                    text-decoration: underline;
+                }
+
+            
+                .btn1 {
+                    display: inline-block;
+                    padding: 5px 10px;
+                    font-size: 1rem;
+                    color: #333;
+                    background-color: white;
+                    border: 1px solid #333;
+                    text-align: center;
+                    border-radius: 5px;
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    margin-top: 20px;
+                
+                }
+
+                .btn1:hover {
+                    background-color: #333;
+                    color: white;
+                }
+
+                footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 10px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px 20px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .footer-info {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-shopping {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-useful-links {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-help {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-shopping h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-useful-links h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-help h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-shopping ul {
+            list-style: none;
+        }
+
+        .footer-useful-links ul {
+            list-style: none;
+        }
+
+        .footer-help ul {
+            list-style: none;
+        }
+
+        .footer-shopping ul li{
+            margin-bottom: 10px;
+        }
+
+        .footer-useful-links ul li{
+            margin-bottom: 10px;
+        }
+
+        .footer-help ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-shopping ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-useful-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-help ul li a  {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-shopping ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-useful-links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-help ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .footer-divider {
+            border: 1px solid #444;
+            margin: 20px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #00d9ff;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+
+                    .SM1 {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: 20px;
+                }
+
+                h2 {
+                    font-size: 2.5rem;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+
+
+                p.s1 {
+                    font-size: 1.2rem;
+                    color: #999;
+                    font-style: italic;
+                    margin-bottom: 30px;
+                }
+
+                .image-grid {
+                    display: flex;
+                    justify-content: flex-start;
+                
+                    overflow-x: auto; 
+                    padding-bottom: 10px;
+                }
+
+            
+                .image-grid img {
+                    width: 16.6%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    flex-shrink: 0; 
+                }
+
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                    p.s1{
+                        font-size: 1rem;
+                    }
+
+                    .container8 {
+            width: 100%;
+            max-width: 765px;
+            padding: 20px;
+        }
+
+        .newsletter {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .newsletter h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .newsletter-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newsletter-form button i {
+            margin-left: 5px;
+        }
+
+        .info {
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info p {
+            margin-bottom: 5px;
+        }
+        .newsletter h1 {
+            font-size: 34px;
+            font-weight:700;
+            }
+
+            .newsletter p {
+            
+                font-size: 12px;
+            }
+
+            .newsletter-form input {
+                width: 100%;
+            }
+
+            .newsletter-form button {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .info {
+                font-size: 12px;
+            }
+            .container9 {
+            width: 100%;
+            max-width: 765px;
+            margin: auto;
+        }
+
+
+        .contact-info {
+            display: flex;
+        
+            justify-content:space-between;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            width: 48%; 
+        }
+
+        .info-box h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer-container {
+                flex-direction: column;
+                text-align: center;
+                
+            
+            }
+
+            .footer-logo {
+                min-width: 100%;
+            }
+            
+            .footer-info {
+                min-width: 100%;
+            }
+            
+            .footer-shopping{
+                min-width: 100%;
+            }
+            
+            .footer-useful-links {
+                min-width: 100%;
+            }
+            
+            .footer-help {
+                min-width: 100%;
+            }
+
+            .social-icons a {
+                margin: 0 5px;
+                font-size: 16px;
+            }
+        }
+        
+
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Hexashop Logo">
+            
+        </div>
+
+      
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+      
+           
+        </label>
+
+        <!-- Menu -->
+        <nav id="menu" style="text-align:center">
+            <ul>
+                <li><a href="#" style="opacity: 0.2;">Home</a></li>
+                <li><a href="#">Men's</a></li>
+                <li><a href="#">Women's</a></li>
+                <li><a href="#">Kids'</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Explore</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+   
+    <div class="image-gallery">
+       
+        <div class="image-item">
+            <img src="../images/left-banner-image.jpg" alt="Image 1">
+            <div class="text-overlay">
+                <h1 style="font-size: 34px;color: white;text-align: center;margin-top: -80px;">We Are <br>Hexashop</h1><br>
+                <p style="color: white;"><i>Awesome, clean & creative <br> HTML5 Template</i></p>
+                <button style="border: 2px solid white;padding: 10px 10px 10px 10px;background-color: transparent;color: white;">Purchase Now!</button>
+            </div>
+        </div>
+
+       
+        <div class="image-item">
+            <img src="../images/baner-right-image-01.jpg" alt="Image 2">
+            <div class="text-overlay">
+                <h2 style="color: white;">Women</h2><br>
+                <p style="color: white;"><i>Best Clothes For Women</i></p>
+            </div>
+        </div>
+
+       
+        <div class="image-item">
+            <img src="../images/baner-right-image-02.jpg" alt="Image 3">
+            <div class="text-overlay">
+                <h2 style="color: white;">Men</h2><br>
+                <p style="color: white;"><i>Best Clothes For Men</i></p>
+            </div>
+        </div>
+
+       
+        <div class="image-item">
+            <img src="../images/baner-right-image-03.jpg" alt="Image 4">
+            <div class="text-overlay">
+                <h2 style="color: white;">Kids</h2><br>
+                <p style="color: white;"><i>Best Clothes For Kids</i></p>
+            </div>
+        </div>
+
+       
+        <div class="image-item">
+            <img src="../images/baner-right-image-04.jpg" alt="Image 5">
+            <div class="text-overlay">
+                <h2 style="color: white;">Accessories</h2>
+                <p style="color: white;"><i>Best Trend Accessories</i></p>
+            </div>
+        </div>
+        
+    </div><br><br>
+
+    <div class="a5">
+        <hr>
+    </div>
+
+
+    <div class="container1">
+       
+        <h1 style="text-align: start;">Men's Latest</h1>
+
+        <p style="color:rgb(171, 167, 167);font-size: 15px;"><i>Details to details is what makes Hexashop different from the other themes.</i></p>
+
+       
+        <img src="../images/men-01.jpg" alt="Spring Image" class="image">
+
+       
+        <div class="bottom-section">
+          
+            <div class="text"><b>Classic Spring</b></div>
+
+           
+            <div class="stars">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+            </div>
+        </div>
+        <div class="price">$110</div>
+    </div><br><br>
+
+    <div class="a5">
+        <hr>
+    </div>
+
+
+    <div class="container2">
+      
+        <h1 style="text-align: start;">Women's Latest</h1>
+
+        <p style="color:rgb(171, 167, 167);font-size: 15px;"><i>Details to details is what makes Hexashop different from the other themes.</i></p><br>
+
+        
+        <img src="../images/women-01.jpg" alt="Spring Image" class="image">
+
+       
+        <div class="bottom-section">
+        
+            <div class="text1"><b>New Green Jacket</b></div>
+
+            <div class="stars">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+            </div>
+        </div>
+        <div class="price">$75.00</div>
+    </div><br><br>
+
+    <div class="a5">
+        <hr>
+    </div>
+
+
+    <div class="container3">
+    
+        <h1 style="text-align: start;">Kid's Latest</h1>
+
+        <p style="color:rgb(171, 167, 167);font-size: 15px;"><i>Details to details is what makes Hexashop different from the other themes.</i></p>
+
+
+        <img src="../images/kid-01.jpg" alt="Spring Image" class="image">
+
+    
+        <div class="bottom-section">
+        
+            <div class="text2"><b>School Collection</b></div>
+
+      
+            <div class="stars">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+            </div>
+        </div>
+        <div class="price"><p style="color:rgb(171, 167, 167);text-align: start;margin-left: -15px;">$80.00</p></div>
+    </div><br><br>
+
+    <div class="a5">
+        <hr>
+    </div>
+
+    <div class="content">
+      
+        <h1 style="text-align: start;">Explore Our Products</h1><br>
+
+        <p style="font-size: 15px;">
+            You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of eCommerce CMS theme as you wish.
+        </p>
+
+        <div class="quote">
+            " You are not allowed to redistribute this template ZIP file on any other website.
+        </div>
+
+        <p style="font-size: 15px;">
+            There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.
+        </p>
+
+        <p style="font-size: 15px;">
+            If this template is beneficial for your website or business, please kindly <a href="#" class="support">support us</a> a little via PayPal. Please also tell your friends about our great website. Thank you.
+        </p>
+
+        <a href="#" class="btn1" style="margin-left: 15px;">Discover More</a>
+    </div><br><br>
+
+    <div class="container5">
+        <div class="Type">
+        <h1>Leather Bags</h1>
+        <p><i>Latest Collection</i></p>
+    </div>
+    </div><br><br>
+
+    <div class="container6">
+        <img src="../images/explore-image-01.jpg" class="imageexp1">
+       
+    </div><br><br>
+
+
+    <div class="container7">
+        <img src="../images/explore-image-02.jpg" class="imageexp2">
+       
+    </div><br><br>
+
+    <div class="content1">
+        <div class="Types1"><br><br><br><br><br><br>
+        
+        <h4>Different Types</h4>
+
+       
+            <i>Over 304 Products</i>
+        </p>
+    </div>
+</div><br><br>
+
+<div class="a5">
+    <hr>
+</div>
+
+   <!-- Social Media Section -->
+    <div class="SM1" style="margin-top: 50px;margin-bottom: 50px;">
+      
+        <h2 style="text-align: start;">Social Media</h2>
+
+       
+        <p class="s1" style="text-align: start;margin-left: -15px;">Details to details is what makes Hexashop different from the other themes.</p>
+
+       
+        <div class="image-grid">
+            <img src="../images/instagram-01.jpg" alt="Image 1">
+            <img src="../images/instagram-02.jpg" alt="Image 2">
+            <img src="../images/instagram-03.jpg" alt="Image 3">
+            <img src="../images/instagram-04.jpg" alt="Image 4">
+            <img src="../images/instagram-05.jpg" alt="Image 5">
+            <img src="../images/instagram-06.jpg" alt="Image 6">
+        </div>
+    </div>
+
+    <div class="a5">
+        <hr>
+    </div>
+
+
+    <div class="container8">
+        <div class="newsletter">
+            <h1>By Subscribing To Our Newsletter You Can Get 30% Off</h1>
+            <p style="font-style: italic;">Details to details is what makes Hexashop different from the other themes.</p>
+            <form class="newsletter-form">
+                <input type="text" placeholder="Your Name" style="font-style: italic;" required>
+                <input type="email" placeholder="Your Email Address" style="font-style: italic;" required>
+                <button type="submit"><i class="fa fa-paper-plane"></i></button>
+            </form>
+        <div class="container9">
+        <div class="contact-info">
+            <div class="info-box">
+                <h3>Store Location:</h3>
+                <p>Sunny Isles Beach, FL 33160, United States</p>
+            </div>
+            <div class="info-box">
+                <h3>Work Hours:</h3>
+                <p>07:30 AM - 9:30 PM Daily</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <div class="info-box">
+                <h3>Phone:</h3>
+                <p>010-020-0340</p>
+            </div>
+            <div class="info-box">
+                <h3>Email:</h3>
+                <p>info@company.com</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <div class="info-box">
+                <h3>Office Location:</h3>
+                <p>North Miami Beach</p>
+            </div>
+            <div class="info-box">
+                <h3>Social Media:</h3>
+                <p>Facebook, Instagram, Behance, LinkedIn</p>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1 style="color: white;">HEXASHOP</h1>
+                <p style="color: white;">ONLINE SHOPPING</p>
+            </div>
+            <div class="footer-info">
+                <p style="color: white;">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</p>
+                <p style="color: white;">hexashop@company.com</p>
+                <p style="color: white;">010-020-0340</p>
+            </div>
+            <div class="footer-shopping">
+                <h2 style="color: white;">Shopping & Categories</h2>
+                <ul>
+                    <li><a href="#">Men's Shopping</a></li>
+                    <li><a href="#">Women's Shopping</a></li>
+                    <li><a href="#">Kid's Shopping</a></li>
+                </ul>
+            </div>
+            <div class="footer-useful-links">
+                <h2 style="color: white;">Useful Links</h2>
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+              <div class="footer-help">
+                <h2 style="color: white;">Help & Information</h2>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Tracking ID</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+       
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p style="color: white;">Copyright @ 2022 HexaShop Co., Ltd. All Rights Reserved.</p>
+            <p style="color: white;">Design: <a href="#">TemplateMo</a></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    
+
+</body>
+</html>
